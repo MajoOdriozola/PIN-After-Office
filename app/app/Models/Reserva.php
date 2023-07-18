@@ -10,5 +10,5 @@ class Reserva extends Model
     use SoftDeletes;
     protected $tabla = 'reservas';
     protected $primarKey = 'id';
-    Protected $fillable = ['nombre', 'telefono', 'correo', 'opcion', 'fecha'];
+    Protected $fillable = ['nombre', 'telefono', 'correo', 'opcion', 'fecha','mensaje'];
 }

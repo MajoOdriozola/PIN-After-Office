@@ -36,7 +36,8 @@ class ReservaController extends Controller
             'telefono' => $request['telefono'],
             'correo' => $request['correo'],
             'opcion' => $request['opcion'],
-            'fecha' => $request['fecha']
+            'fecha' => $request['fecha'],
+            'mensaje'=> $request['mensaje']
         ]);
 
         $details = [
@@ -44,7 +45,8 @@ class ReservaController extends Controller
             'telefono' => $request['telefono'],
             'correo' => $request['correo'],
             'opcion' => $request['opcion'],
-            'fecha' => $request['fecha']
+            'fecha' => $request['fecha'],
+            'mensaje' => $request['mensaje']
         ];
         Mail::to('jonatan.leguisamo@gmail.com')->send(new SendPost($details));
 

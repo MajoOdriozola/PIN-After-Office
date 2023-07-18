@@ -14,5 +14,6 @@
 <p>Correo: {{$details['correo']}}</p>
 <p>Opciones: {{$details['opcion']}}</p>
 <p>Fecha: {{$details['fecha']}}</p>
+<p>Mensaje: {{$details['mensaje']}}</p>
 </body>
 </html>

@@ -1,5 +1,5 @@
 const form = document.getElementById('fomulario');
-const successMessage = document.getElementById('success-popup');
+const successMessage = document.getElementById('success-message');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault(); // Evita el envío del formulario por defecto
@@ -30,12 +30,13 @@ fetch('http://localhost/app/public/index.php/api/registro-reserva', {
 })
 .then(response => {
   if (response.ok) {
-    document.querySelector("#success-popup").classList.add('show');
-    setTimeout(() => {
-      document.querySelector("#success-popup").classList.remove('show');
-    }, 1000);
+    document.querySelector("#success-message").innerHTML = '¡Envío exitoso!';
+    document.querySelector("#success-message").style.color = 'red';
+    document.querySelector("#success-message").style.display = 'block';
 
-    form.reset();
+    setTimeout(() => {
+      document.querySelector("#success-message").style.display = 'none';
+    }, 5000);
   } else {
     console.error('Error al enviar los datos');
     // Manejar el error de envío de datos
@@ -44,5 +45,4 @@ fetch('http://localhost/app/public/index.php/api/registro-reserva', {
 .catch(error => {
   console.error('Error en la solicitud', error);
   // Manejar el error de la solicitud
-});
 });

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <title>PIN After Office</title> 
+    <title>Accordion in HTML CSS & JavaScript</title> 
 </head>
 <body>
     <header id="header">
@@ -16,6 +16,7 @@
         <i class="fas fa-bars"></i>
         </label>
         <label class="logo">
+            <a href="#header">
             <img src="images/Logo After Office.png">
             </a>
         </label>
@@ -28,33 +29,24 @@
         <div class="slider">
             <div class="myslide fade">
                 <div class="txt">
+                    <h1>El mejor espacio</h1>
+                    <p>Web Devoloper<br>Subscribe To My Channel For More Videos</p>
+                </div>
+                <img src="images/10.jpg" style="width: 100%; height: 100vh">
+            </div>
+            <div class="myslide fade">
+                <div class="txt">
+                    <h1>Excelente Gastronomia</h1>
+                    <p>Web Devoloper<br>Subscribe To My Channel For More Videos</p>
+                </div>
+                <img src="images/11.jpg" style="width: 100%; height: 100vh">
+            </div>
+            <div class="myslide fade">
+                <div class="txt">
                     <h1>Los mejores encuentros</h1>
                     <p>Web Devoloper<br>Subscribe To My Channel For More Videos</p>
                 </div>
-                <video autoplay loop muted poster="ruta_del_poster.jpg">
-                    <source src="images/video/13.mp4" type="video/mp4">
-                    Tu navegador no soporta el elemento de video.
-                  </video>
-            </div>
-            <div class="myslide fade">
-                <div class="txt">
-                    <h1>Variada de propuestas</h1>
-                    <p>Web Devoloper<br>Subscribe To My Channel For More Videos</p>
-                </div>
-                <video autoplay loop muted poster="ruta_del_poster.jpg">
-                    <source src="images/video/11.mp4" type="video/mp4">
-                    Tu navegador no soporta el elemento de video.
-                  </video>
-            </div>
-            <div class="myslide fade">
-                <div class="txt">
-                    <h1>Espacio ideal</h1>
-                    <p>Web Devoloper<br>Subscribe To My Channel For More Videos</p>
-                </div>
-                <video autoplay loop muted poster="ruta_del_poster.jpg">
-                    <source src="images/video/5.mp4" type="video/mp4">
-                    Tu navegador no soporta el elemento de video.
-                  </video>
+                <img src="images/12.jpg" style="width: 100%; height: 100vh">
             </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -101,11 +93,8 @@
                     </p>
                 </div>
             </div>
-            <div class="video">
-                <video autoplay loop muted poster="ruta_del_poster.jpg">
-                    <source src="images/video/12.mp4" type="video/mp4">
-                    Tu navegador no soporta el elemento de video.
-                  </video>
+            <div class="imagen">
+                <img src="img1.png" alt="">
             </div>
         </div>
     </section> 
@@ -129,14 +118,14 @@
                     <textarea name="mensaje" id="" cols="30" rows="02" placeholder= Mensaje ></textarea>
                     <button type="submit">Enviar</button>
                 </form>
-                <div id="success-popup">Datos enviados correctamente</div>
+                <div id="success-message">Datos enviados correctamente</div>
             </div>
             <div class="contact_data2">
               <ul>
                 <li>
                   <i class="fa-solid fa-location-dot"></i>
                   <strong>Ubicación:</strong>
-                  <p>Av. Rivera 1546, Montevideo</p>
+                  <p>A108 Adam Street, New York, NY 535022</p>
                 </li>
                 <li>
                   <i class="fa-solid fa-envelope"></i>
@@ -158,16 +147,6 @@
               </div>
             </div>
           </div>
-
-          <div class="video-container">
-            <video autoplay loop muted poster="ruta_del_poster.jpg">
-              <source src="images/video/3.mp4" type="video/mp4">
-              Tu navegador no soporta el elemento de video.
-            </video>
-            <div class="content">
-            </div>
-          </div>
-          
     </section>  
     <script src="slider.js"></script>
     <script src="accordion.js"></script>

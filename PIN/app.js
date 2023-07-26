@@ -21,7 +21,7 @@ form.addEventListener('submit', (e) => {
   };
 
   // Realiza el envío de datos utilizando fetch
-fetch('http://localhost/app/public/index.php/api/registro-reserva', {
+fetch('dashing-hammer-production.up.railway.app', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json'
